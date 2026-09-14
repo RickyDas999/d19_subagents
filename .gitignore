@@ -1,0 +1,6 @@
+.env
+sheets-service-account.json
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

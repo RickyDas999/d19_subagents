@@ -1,0 +1,10 @@
+[project]
+name = "d19-agent-sdk-subagents"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "claude-agent-sdk",
+    "pandas>=3.0.5",
+    "python-dotenv>=1.2.2",
+    "streamlit>=1.62.0",
+]

@@ -1,0 +1,20 @@
+# ----- One-time setup -----
+npm install -g @anthropic-ai/claude-code
+uv init --bare
+uv add claude-agent-sdk python-dotenv streamlit pandas
+
+
+# ----- d19/.env -----
+# ANTHROPIC_API_KEY=sk-ant-...
+# GOOGLE_SHEET_ID=<the sheet id>
+# SERVICE_ACCOUNT_PATH=<absolute path to the service-account JSON>
+
+
+# ----- Run -----
+uv run agent_sdk_subagent_teaching.py                 # terminal
+uv run streamlit run agent_sdk_subagent_streamlit.py  # browser
+
+
+# ----- After cloning -----
+npm install -g @anthropic-ai/claude-code
+uv sync
